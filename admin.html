@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, <b>admin</b>!</p>
+    <p>Your session cookie has been set.</p>
+    <p>Good luck decoding the secret…</p>
+</div>
+
+<script>
+if (!document.cookie.includes("auth")) {
+    window.location = "index.html";
+}
+</script>
+
+</body>
+</html>
+
