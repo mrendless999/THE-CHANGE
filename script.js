@@ -3,9 +3,8 @@ function login() {
     const p = document.getElementById("pass").value;
 
     if (u === "admin" && p === "admin@123") {
-        // Base64 encode flag & set cookie
-        const flag = "ZSFLAG{G00d_J0b_K33p_G01ng}";
-        const encoded = btoa(flag);
+        const code = "WlNGTEFHe0cwMGRfSjBiX0szM3BfRzAxbmd9";
+        const encoded = btoa(code);
 
         document.cookie = "auth=" + encoded + "; path=/;";
         window.location = "admin.html";
