@@ -6,20 +6,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="card">
     <h2>Admin Dashboard</h2>
-    <p>Welcome, <b>admin</b>!</p>
-    <p>Your session cookie has been set.</p>
-    <p>Good luck decoding the secret…</p>
+    <p>Welcome, Administrator.</p>
+    <p>Your session has been initialized.</p>
 </div>
 
 <script>
-if (!document.cookie.includes("auth")) {
+if (!document.cookie.includes("session=")) {
     window.location = "index.html";
 }
 </script>
 
 </body>
 </html>
-
