@@ -14,7 +14,7 @@ async function login() {
     const validPass = "7676aaafb027c825bd9abab78b234070e702752f625b752e55e55b48e607e358";
 
     if (userHash === validUser && passHash === validPass) {
-        const finalFlag = xorDecrypt([90,83,70,76,65,71,123,71,48,48,100,95,74,48,98,95,75,51,51,112,95,71,48,49,110,103,125], 7);
+        const finalFlag = xorDecrypt([93, 84, 65, 75, 70, 64, 124, 64, 55, 55, 99, 88, 77, 55, 101, 88, 76, 52, 52, 119, 88, 64, 55, 54, 105, 96, 122], 7);
         document.cookie = "session=" + btoa(finalFlag) + "; path=/;";
         window.location = "admin.html";
     } else {
